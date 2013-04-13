@@ -1,0 +1,43 @@
+80 total entities: 1-40 persons, 41-80 orgs
+/Users/suzy/Desktop/slot-filler-validation_db
+
+file: allAnswers.csv
+description: all answers labeled
+example: SFV_1_1_1 ,-1,0.000075,0.21052632,FALSE
+header: (last line) sys_run,label,rank,sysconf,
+36301 rows
+
+file: KBP2012_english_SF_slot-list
+description: list of all entities and slots
+example: SF_ENG_001:per:alternate_names
+SF_ENG_001:per:alternate_names
+no header
+1504 rows
+
+file: KBP2012_english_SF_qrels
+description: full output, non-nil answers
+example: 15	SF_ENG_056:org:alternate_names	XIN_ENG_20100605.0022	-1	0	Darfur rebel Justice and Equality Movement	0	2166:2207	-1	1978:2299
+no header
+22885 rows
+
+file: sfbefore
+description: all of the answers concatenated
+example:SF_ENG_001	per:cause_of_death	SFV_10_1_1	LTW_ENG_20070423.0051.LDC2009T13	cancer	358	363	238	401	1.0
+no header
+36301 rows
+
+file:tac_2012_kbp_english_regular_slot_filling_evaluation_queries.xml
+<query id="SF_ENG_001">
+    <name>Juanita Millender-McDonald</name>
+    <docid>NYT_ENG_20080101.0037.LDC2009T13</docid>
+    <beg>3998</beg>
+    <end>4023</end>
+    <enttype>PER</enttype>
+    <nodeid>E0046379</nodeid>
+    <ignore>per:date_of_birth per:city_of_birth per:date_of_death per:city_of_death per:religion per:stateorprovince_of_birth per:stateorprovince_of_death per:age</ignore>
+</query>
+
+
+
+
+
